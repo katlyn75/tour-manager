@@ -8,22 +8,10 @@ describe('Circus Tour', () => {
     it('valid model check', () => {
         const data = {
             title: 'Portland Magical Tour',
-            activities: ['beardedLady', 'swordSwallower', 'fireBreather'],
+            activities: ['Bearded Lady', 'Sword Swallower', 'Fire Breather'],
             launchDate: new Date(),
-            stops: [{
-                location: {
-                    city: 'Portland',
-                    state: 'Oregon',
-                    zip: 97408
-                }
-            }],
-            weather: [{
-            //see demo and choose fields;
-            }],
-            attendance: {
-                type: 575,
-                min: 1,
-            }
+            stops: [],
+                
         };
 
         const circusTour = new CircusTour(data);
